@@ -19,3 +19,6 @@ Thumbs.db
 # Ignored files
 *.ts
 !*.d.ts
+.idea
+.scannerwork
+sonar-project.properties

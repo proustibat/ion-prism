@@ -16,7 +16,7 @@ export class IonPrismDirective {
 
     ngOnInit(){
         this.content = this.elementRef.nativeElement.value;
-        this.language = this.elementRef.nativeElement.getAttribute('code-prism');
+        this.language = this.elementRef.nativeElement.getAttribute('ion-prism');
 
         this.el = this.renderer.createElement('pre');
         this.renderer.appendChild(this.el, this.renderer.createText(this.content));
@@ -33,6 +33,9 @@ export class IonPrismDirective {
     }
 
     highlightCode():void {
+        console.log(Prism);
+        console.log(this.language);
+        console.log(this.content);
         let newContent = '';
         let highlightedHTML = Prism.highlight(this.content, Prism.languages[this.language])
         // .replace(/^\s\s*/, '') // delete spaces at the start of the block
