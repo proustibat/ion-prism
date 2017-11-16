@@ -1,6 +1,6 @@
 {
   "name": "ion-prism",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Ionic directive to display code blocks in Ionic 3 apps",
   "main": "index.ts",
   "scripts": {
