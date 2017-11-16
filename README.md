@@ -11,10 +11,11 @@ An Ionic directive to display blocks of code on your Ionic HTML pages, using [Pr
 		</td>
 		<td>
 			<a href='https://david-dm.org/proustibat/ion-prism'><img src='https://david-dm.org/proustibat/ion-prism/status.svg' alt='dependencies Status'/></a><br/>
-			<a href='https://david-dm.org/proustibat/ion-prism?type=dev'><img src='https://david-dm.org/proustibat/ion-prism/dev-status.svg' alt='devDependencies Status'/></a><br/>
+			<a href='https://david-dm.org/proustibat/ion-prism?type=dev'><img src='https://david-dm.org/proustibat/ion-prism/dev-status.svg' alt='devDependencies Status'/></a>
 		</td>
     <td>
-      <a href='https://github.com/proustibat/ion-prism/blob/master/LICENSE.md'><img src='https://img.shields.io/github/license/proustibat/ion-prism.svg' alt='GitHub license'/></a><br/><br/>
+    <a href="https://badge.fury.io/js/ion-prism"><img src="https://badge.fury.io/js/ion-prism.svg" alt="npm version" height="18"></a><br/>
+      <a href='https://github.com/proustibat/ion-prism/blob/master/LICENSE.md'><img src='https://img.shields.io/github/license/proustibat/ion-prism.svg' alt='GitHub license'/></a>
     </td>
 	</tr>
 </table>
@@ -65,6 +66,15 @@ Usage
 Ion Prism directive works only on textarea element and needs a value for the language: 
 
 ```html
+<textarea ion-prism="<language_type_here>">
+    <your_code_to_display_here_>
+</textarea>
+```
+
+
+### Example
+
+```html
 <ion-header>
   <ion-navbar>
     <ion-title>
@@ -103,6 +113,8 @@ Result:
 
 <img src="https://i.imgur.com/CMN7Ck1.png" width="340" alt="Result illustration"/>
 
+
+A full app as example is [available here](https://github.com/proustibat/ion-prism-app-example). 
 
 
 Contribute
