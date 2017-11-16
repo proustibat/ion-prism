@@ -74,17 +74,9 @@ Ion Prism directive works only on textarea element and needs a value for the lan
 
 ### Example
 
+A full app as example is [available here](https://github.com/proustibat/ion-prism-app-example). 
+
 ```html
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ion Prism Directive
-    </ion-title>
-  </ion-navbar>
-</ion-header>
-
-<ion-content padding>
-
   <h1>Example with javascript</h1>
   <textarea ion-prism="javascript">
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -104,18 +96,11 @@ Ion Prism directive works only on textarea element and needs a value for the lan
         <rect x="160" y="160" height="30" width="30" fill="red" />
     </svg>
   </textarea>
-
-</ion-content>
-
 ```
 
 Result: 
 
 <img src="https://i.imgur.com/CMN7Ck1.png" width="340" alt="Result illustration"/>
-
-
-A full app as example is [available here](https://github.com/proustibat/ion-prism-app-example). 
-
 
 Contribute
 ----------
