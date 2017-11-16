@@ -100,7 +100,7 @@ Ion Prism directive works only on textarea element and needs a value for the lan
 ```
 
 Result: 
-![Illustration](https://i.imgur.com/CMN7Ck1.png)
+<img src="https://i.imgur.com/CMN7Ck1.png" width="340" alt="Result illustration"/>
 
 
 
