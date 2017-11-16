@@ -14,7 +14,7 @@ An Ionic directive to display blocks of code on your Ionic HTML pages, using [Pr
 			<a href='https://david-dm.org/proustibat/ion-prism?type=dev'><img src='https://david-dm.org/proustibat/ion-prism/dev-status.svg' alt='devDependencies Status'/></a>
 		</td>
     <td>
-    <a href="https://badge.fury.io/js/ion-prism"><img src="https://badge.fury.io/js/ion-prism.svg" alt="npm version" height="18"></a><br/>
+    <a href="https://badge.fury.io/js/ion-prism"><img src="https://badge.fury.io/js/ion-prism.svg" alt="npm version" height="18"></a> <a href="https://badge.fury.io/gh/proustibat%2Fion-prism"><img src="https://badge.fury.io/gh/proustibat%2Fion-prism.svg" alt="GitHub version" height="18"></a><br/>
       <a href='https://github.com/proustibat/ion-prism/blob/master/LICENSE.md'><img src='https://img.shields.io/github/license/proustibat/ion-prism.svg' alt='GitHub license'/></a>
     </td>
 	</tr>
