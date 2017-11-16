@@ -48,7 +48,9 @@
   },
   "devDependencies": {
     "commitizen": "^2.9.6",
-    "cz-conventional-changelog": "^2.1.0"
+    "cz-conventional-changelog": "^2.1.0",
+    "tslint": "^5.8.0",
+    "tslint-eslint-rules": "^4.1.1"
   },
   "typings": "./index.d.ts",
   "config": {
