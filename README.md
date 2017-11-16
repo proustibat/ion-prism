@@ -59,6 +59,44 @@ Finally, you just need to add css file in the *index.html* of the Ionic app:
 ```
 **Note that you may want import one of the other css files of Prismjs to change the theme as you want.** *(prism-coy.css, prism-dark.css, prism-funky.css, prism-okaidia.css, prism-solarizedlight.css, prism-tomorrow.css, prism-twilight.css)*
 
+### Declare directive in your app
+In *app.module.ts*, import IonPrismDirective and add it to the declarations of @NgModule as follows:
+
+```typescript
+import { BrowserModule } from '@angular/platform-browser';
+import { ErrorHandler, NgModule } from '@angular/core';
+import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
+import { SplashScreen } from '@ionic-native/splash-screen';
+import { StatusBar } from '@ionic-native/status-bar';
+
+import { MyApp } from './app.component';
+import { HomePage } from '../pages/home/home';
+import { IonPrismDirective } from 'ion-prism';
+
+@NgModule({
+  declarations: [
+    MyApp,
+    HomePage,
+    IonPrismDirective
+  ],
+  imports: [
+    BrowserModule,
+    IonicModule.forRoot(MyApp)
+  ],
+  bootstrap: [IonicApp],
+  entryComponents: [
+    MyApp,
+    HomePage
+  ],
+  providers: [
+    StatusBar,
+    SplashScreen,
+    {provide: ErrorHandler, useClass: IonicErrorHandler}
+  ]
+})
+export class AppModule {}
+
+```
 
 
 Usage
