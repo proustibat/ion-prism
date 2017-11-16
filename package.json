@@ -4,9 +4,10 @@
   "description": "Ionic directive to display code blocks in Ionic 3 apps",
   "main": "index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc --noStrictGenericChecks",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build",
+    "postversion": "git push origin master --tags",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -45,7 +46,14 @@
     "zone.js": "^0.8.18"
   },
   "devDependencies": {
+    "commitizen": "^2.9.6",
+    "cz-conventional-changelog": "^2.1.0",
     "typescript": "^2.6.1"
   },
-  "typings": "./index.d.ts"
+  "typings": "./index.d.ts",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }

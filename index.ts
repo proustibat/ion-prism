@@ -2,16 +2,16 @@ import { Directive, ElementRef, Renderer2} from '@angular/core';
 import * as Prism from 'prismjs';
 
 @Directive({
-    selector: 'textarea[code-prism]'
+    selector: 'textarea[ion-prism]'
 })
-export class CodePrismDirective {
+export class IonPrismDirective {
 
     el:any;
     content:string;
     language:string;
 
     constructor(public elementRef: ElementRef, public renderer: Renderer2) {
-        console.log('Hello CodePrismDirective Directive');
+        console.log('Hello IonPrismDirective Directive');
     }
 
     ngOnInit(){
