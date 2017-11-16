@@ -1,4 +1,4 @@
-import { Directive, ElementRef, Renderer2} from '@angular/core';
+import { Directive, ElementRef, Renderer2 } from '@angular/core';
 import * as Prism from 'prismjs';
 
 @Directive({
@@ -10,9 +10,7 @@ export class IonPrismDirective {
     content:string;
     language:string;
 
-    constructor(public elementRef: ElementRef, public renderer: Renderer2) {
-        console.log('Hello IonPrismDirective Directive');
-    }
+    constructor(public elementRef: ElementRef, public renderer: Renderer2) {}
 
     ngOnInit(){
         this.content = this.elementRef.nativeElement.value;
@@ -33,9 +31,6 @@ export class IonPrismDirective {
     }
 
     highlightCode():void {
-        console.log(Prism);
-        console.log(this.language);
-        console.log(this.content);
         let newContent = '';
         let highlightedHTML = Prism.highlight(this.content, Prism.languages[this.language])
         // .replace(/^\s\s*/, '') // delete spaces at the start of the block
