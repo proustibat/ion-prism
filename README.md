@@ -145,9 +145,11 @@ Result:
 
 Contribute
 ----------
-- I use [commitizen](https://github.com/commitizen/cz-cli), so if you wanna contribute to the project and create a pull request, please use it by running `git cz` instead of `git commit`.
-- Issue Tracker: [https://github.com/proustibat/ion-prism/issues](https://github.com/proustibat/ion-prism/issues)
-- Source Code: [https://github.com/proustibat/ion-prism](https://github.com/proustibat/ion-prism)
+- Issue Tracker: [https://github.com/proustibat/ion-prism/issues](https://github.com/proustibat/occurences/issues)
+- Source Code: [https://github.com/proustibat/ion-prism](https://github.com/proustibat/occurences)
+- Pull Requests: [https://github.com/proustibat/ion-prism/pulls](https://github.com/proustibat/occurences/pulls)
+
+(I use [commitizen](https://github.com/commitizen/cz-cli), so if you wanna contribute to the project and create a pull request, please use it by running `git cz` instead of `git commit`.)
 
 Support
 -------
