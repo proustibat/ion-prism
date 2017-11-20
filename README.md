@@ -3,6 +3,9 @@ ION PRISM DIRECTIVE
 
 An Ionic directive to display blocks of code on your Ionic HTML pages, using [Prism.js](http://prismjs.com).
 
+[![NPM](https://nodei.co/npm/ion-prism.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/ion-prism/)
+
+
 <table>
 	<tr>
 		<td>
