@@ -1,4 +1,4 @@
-ION PRISM DIRECTIVE  [![GitHub top language](https://img.shields.io/github/languages/top/proustibat/ion-prism.svg)](https://github.com/proustibat/ion-prism)
+ION PRISM DIRECTIVE  [![GitHub top language](https://img.shields.io/github/languages/top/proustibat/ion-prism.svg)](https://github.com/proustibat/ion-prism) [![npm](https://img.shields.io/npm/dt/ion-prism.svg)](https://www.npmjs.com/package/ion-prism)
 ===================
 
 An Ionic directive to display blocks of code on your Ionic HTML pages, using [Prism.js](http://prismjs.com).
