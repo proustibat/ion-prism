@@ -1,0 +1,34 @@
+env:
+  global:
+    - GITHUB_REPO: proustibat/ion-prism
+    # generate token at https://github.com/settings/tokens/new
+    # generate secure with travis encrypt -r username/repository GH_TOKEN=[the token you created before]
+
+language: node_js
+node_js: '8'
+cache: npm
+
+# create a user token here: https://sonarcloud.io/account/security
+# run `travis encrypt your-token-here`
+# paste secure token below
+#addons:
+#  sonarcloud:
+#    organization: proustibat-github
+#    token:
+#      secure: "K8aOT5z1xZ26HTsoh3nQaY5Q6TQIDKP+vZViTaCkpXfOMHQcRh38HMEzcw06/EZZ6wKWlDqiGF0erCr6mafKTcbEatBVkcfhoUUAd7OJVfUoNDrzDDqpnCbywxQEg6qKWIlhIHDjEih5trA/Am5AIXt/s8Md/7GlYAoDcuNHTg/vaFMLXXIjfqAvkULigXk25V76z2PGouRUZOwmh4Gh6OXmuEEcc9t2cMm9VlquMmKKzypHWs++PXMk0+0gMrvL4LZNqRt3uBAQl25yNsxRZvzQjboa1NIOGhnUyMKpTKTXm4xygzK0uqabKpcoveuD5RVwlgkFtov6WpONyYZcsGf3AL/UYjbRbCgT8GHTpa2T92Dw6Ps9kcZlcu585uAOanarfjBweLKeT5mRma2k9BD8i2WesbBOfYXMToyV+CgkBtQKdUKCw4qV7Tm2LXuFsBl21BM+qtzienuiDiq455eqsgCnQJ0dwp3mCwpU+H19Vh5aGZvz7sm8AjtE+gbcFG+hYVkmkOFTQS5n/r8nEr0l+IrQGDuKjMiTvjQsMulM8adZfq7f+q5QHvVm6JzAQFGIi4JkK4e7zSqkXDVKJHPVjW4qdKUHn4SCeY5DG8fpFxS4PVbDz/GH/6j7SGuJPRURTLDoJ2PywOsDexyM1OVSzOoPQPdxqB6AyaG8fxQ="
+
+before_install:
+
+install:
+- npm install
+
+script:
+- npm run build
+
+# Here we want to check out where we are.
+# We only want to update Github Pages if we're building
+# the master branch of the original repository, so we
+# have to check $TRAVIS_PULL_REQUEST and $TRAVIS_BRANCH.
+# If we are here, we run bash deploy.sh
+#after_success:
+# - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && bash deploy.sh

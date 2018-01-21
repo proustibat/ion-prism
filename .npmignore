@@ -22,3 +22,6 @@ Thumbs.db
 .idea
 .scannerwork
 sonar-project.properties
+deploy.sh
+sonar.sh
+.travis.yml
