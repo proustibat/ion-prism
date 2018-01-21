@@ -4,9 +4,9 @@
   "description": "Ionic directive to display code blocks in Ionic 3 apps",
   "main": "index.ts",
   "scripts": {
-    "lint": "./node_modules/.bin/tslint -p index.ts -c tslint.json",
-    "build": "yarn lint && tsc --noStrictGenericChecks",
-    "prepublish": "yarn build",
+    "lint": "./node_modules/.bin/tslint -c tslint.json index.ts ",
+    "build": "npm run lint && tsc --noStrictGenericChecks",
+    "publish": "npm run build",
     "postversion": "git push origin master --tags",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -35,22 +35,22 @@
   "homepage": "https://github.com/proustibat/ion-prism#readme",
   "dependencies": {
     "ionic-angular": "3.9.2",
-    "@angular/common": "5.0.1",
-    "@angular/compiler": "5.0.1",
-    "@angular/compiler-cli": "5.0.1",
-    "@angular/core": "5.0.1",
-    "@angular/forms": "5.0.1",
-    "@angular/http": "5.0.1",
-    "prismjs": "1.8.4",
-    "@types/prismjs": "1.6.5",
-    "rxjs": "5.5.2",
-    "zone.js": "0.8.18",
-    "typescript": "2.6.1"
+    "@angular/common": "5.2.1",
+    "@angular/compiler": "5.2.1",
+    "@angular/compiler-cli": "5.2.1",
+    "@angular/core": "5.2.1",
+    "@angular/forms": "5.2.1",
+    "@angular/http": "5.2.1",
+    "prismjs": "1.10.0",
+    "@types/prismjs": "1.9.0",
+    "rxjs": "5.5.6",
+    "zone.js": "0.8.20",
+    "typescript": "2.6.2"
   },
   "devDependencies": {
     "commitizen": "2.9.6",
     "cz-conventional-changelog": "2.1.0",
-    "tslint": "5.8.0",
+    "tslint": "5.9.1",
     "tslint-ionic-rules": "0.0.13"
   },
   "typings": "./index.d.ts",

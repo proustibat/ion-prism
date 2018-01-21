@@ -1,6 +1,8 @@
 ION PRISM DIRECTIVE  [![GitHub top language](https://img.shields.io/github/languages/top/proustibat/ion-prism.svg)](https://github.com/proustibat/ion-prism) <a href='https://github.com/proustibat/ion-prism/blob/master/LICENSE.md'><img src='https://img.shields.io/github/license/proustibat/ion-prism.svg' alt='GitHub license'/></a>
 ===================
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/proustibat/ion-prism.svg)](https://greenkeeper.io/)
+
 An Ionic directive to display blocks of code on your Ionic HTML pages, using [Prism.js](http://prismjs.com).
 
 
