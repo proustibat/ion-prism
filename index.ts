@@ -10,9 +10,9 @@ export class IonPrismDirective {
     content: string;
     language: string;
 
-    constructor( public elementRef: ElementRef, public renderer: Renderer2 ) {}
+    constructor(public elementRef: ElementRef, public renderer: Renderer2) {}
 
-    ngOnInit () {
+    ngOnInit() {
         this.content = this.elementRef.nativeElement.value;
         this.language = this.elementRef.nativeElement.getAttribute('ion-prism');
 
@@ -29,7 +29,7 @@ export class IonPrismDirective {
         this.highlightCode();
     }
 
-    highlightCode (): void {
+    highlightCode(): void {
         let newContent = '';
         const highlightedHTML = Prism.highlight(this.content, Prism.languages[this.language])
         // .replace(/^\s\s*/, '') // delete spaces at the start of the block
@@ -41,7 +41,7 @@ export class IonPrismDirective {
 
         lines.forEach((line, index) => {
             const spacesAtStart = line.search(/\S|$/);
-            line = line.slice( spacesAtStart >= spacesToCancel ? spacesToCancel : spacesAtStart );
+            line = line.slice(spacesAtStart >= spacesToCancel ? spacesToCancel : spacesAtStart);
             newContent += line + '\n';
         });
 
