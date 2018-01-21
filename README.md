@@ -1,27 +1,14 @@
-ION PRISM DIRECTIVE  [![GitHub top language](https://img.shields.io/github/languages/top/proustibat/ion-prism.svg)](https://github.com/proustibat/ion-prism) [![npm](https://img.shields.io/npm/dt/ion-prism.svg)](https://www.npmjs.com/package/ion-prism)
+ION PRISM DIRECTIVE  [![GitHub top language](https://img.shields.io/github/languages/top/proustibat/ion-prism.svg)](https://github.com/proustibat/ion-prism) <a href='https://github.com/proustibat/ion-prism/blob/master/LICENSE.md'><img src='https://img.shields.io/github/license/proustibat/ion-prism.svg' alt='GitHub license'/></a>
 ===================
 
 An Ionic directive to display blocks of code on your Ionic HTML pages, using [Prism.js](http://prismjs.com).
 
-[![NPM](https://nodei.co/npm/ion-prism.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/ion-prism/)
+
+| [![NPM](https://nodei.co/npm/ion-prism.png?compact=true)](https://www.npmjs.com/package/ion-prism) </br> [![GitHub package version](https://img.shields.io/github/package-json/v/proustibat/ion-prism.svg)]() [![npm](https://img.shields.io/npm/v/ion-prism.svg)](https://www.npmjs.com/package/ion-prism) [![Npm downloads](https://img.shields.io/npm/dt/ion-prism.svg)](https://www.npmjs.com/package/ion-prism) | [![Maintenance](https://img.shields.io/maintenance/yes/2018.svg)](https://github.com/proustibat/ion-prism/commits/master) </br> [![GitHub last commit](https://img.shields.io/github/last-commit/proustibat/ion-prism.svg)](https://github.com/proustibat/ion-prism/commits/master) </br> [![Open issues](https://sonarcloud.io/api/badges/measure?key=prstbt.ion-prism.directive&metric=open_issues)](https://sonarcloud.io/component_measures?id=prstbt.ion-prism.directive&metric=open_issues) | [![Build Status](https://travis-ci.org/proustibat/ion-prism.svg?branch=master)](https://travis-ci.org/proustibat/ion-prism) </br> [![Sonar quality gate](https://sonarcloud.io/api/badges/gate?key=prstbt.ion-prism.directive)](https://sonarcloud.io/dashboard?id=prstbt.ion-prism.directive) </br> [![Code Climate](https://codeclimate.com/github/proustibat/ion-prism/badges/gpa.svg)](https://codeclimate.com/github/proustibat/ion-prism) </br> [![Coverage Status](https://coveralls.io/repos/github/proustibat/ion-prism/badge.svg?branch=master)](https://coveralls.io/github/proustibat/ion-prism?branch=master) | [![Greenkeeper badge](https://badges.greenkeeper.io/proustibat/ion-prism.svg)](https://greenkeeper.io/) </br>[![Dependencies Status](https://david-dm.org/proustibat/stats-text/status.svg)](https://david-dm.org/proustibat/stats-text) </br>[![DevDependencies Status](https://david-dm.org/proustibat/stats-text/dev-status.svg)](https://david-dm.org/proustibat/stats-text?type=dev) |
+| --- | :--- | :---- | :----
 
 
-<table>
-	<tr>
-		<td>
-			<a href='https://sonarcloud.io/dashboard?id=prstbt.ion-prism.directive'><img src='https://sonarcloud.io/api/badges/gate?key=prstbt.ion-prism.directive' alt='Sonar quality gate'/></a><br/>
-			<a href='https://sonarcloud.io/component_measures?id=prstbt.ion-prism.directive&metric=alert_status'><img src='https://sonarcloud.io/api/badges/measure?key=prstbt.ion-prism.directive&metric=alert_status' alt='Quality Gate Status'/></a>
-		</td>
-		<td>
-			<a href='https://david-dm.org/proustibat/ion-prism'><img src='https://david-dm.org/proustibat/ion-prism/status.svg' alt='dependencies Status'/></a><br/>
-			<a href='https://david-dm.org/proustibat/ion-prism?type=dev'><img src='https://david-dm.org/proustibat/ion-prism/dev-status.svg' alt='devDependencies Status'/></a>
-		</td>
-    <td>
-    <a href="https://badge.fury.io/js/ion-prism"><img src="https://badge.fury.io/js/ion-prism.svg" alt="npm version" height="18"></a> <a href="https://badge.fury.io/gh/proustibat%2Fion-prism"><img src="https://badge.fury.io/gh/proustibat%2Fion-prism.svg" alt="GitHub version" height="18"></a><br/>
-      <a href='https://github.com/proustibat/ion-prism/blob/master/LICENSE.md'><img src='https://img.shields.io/github/license/proustibat/ion-prism.svg' alt='GitHub license'/></a>
-    </td>
-	</tr>
-</table>
+-----------------
 
 Installation
 ------------
