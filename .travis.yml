@@ -11,11 +11,11 @@ cache: npm
 # create a user token here: https://sonarcloud.io/account/security
 # run `travis encrypt your-token-here`
 # paste secure token below
-#addons:
-#  sonarcloud:
-#    organization: proustibat-github
-#    token:
-#      secure: "K8aOT5z1xZ26HTsoh3nQaY5Q6TQIDKP+vZViTaCkpXfOMHQcRh38HMEzcw06/EZZ6wKWlDqiGF0erCr6mafKTcbEatBVkcfhoUUAd7OJVfUoNDrzDDqpnCbywxQEg6qKWIlhIHDjEih5trA/Am5AIXt/s8Md/7GlYAoDcuNHTg/vaFMLXXIjfqAvkULigXk25V76z2PGouRUZOwmh4Gh6OXmuEEcc9t2cMm9VlquMmKKzypHWs++PXMk0+0gMrvL4LZNqRt3uBAQl25yNsxRZvzQjboa1NIOGhnUyMKpTKTXm4xygzK0uqabKpcoveuD5RVwlgkFtov6WpONyYZcsGf3AL/UYjbRbCgT8GHTpa2T92Dw6Ps9kcZlcu585uAOanarfjBweLKeT5mRma2k9BD8i2WesbBOfYXMToyV+CgkBtQKdUKCw4qV7Tm2LXuFsBl21BM+qtzienuiDiq455eqsgCnQJ0dwp3mCwpU+H19Vh5aGZvz7sm8AjtE+gbcFG+hYVkmkOFTQS5n/r8nEr0l+IrQGDuKjMiTvjQsMulM8adZfq7f+q5QHvVm6JzAQFGIi4JkK4e7zSqkXDVKJHPVjW4qdKUHn4SCeY5DG8fpFxS4PVbDz/GH/6j7SGuJPRURTLDoJ2PywOsDexyM1OVSzOoPQPdxqB6AyaG8fxQ="
+addons:
+  sonarcloud:
+    organization: proustibat-github
+    token:
+      secure: "UWJt9HlJjXuKIY/JgkKcRaRUZ7GkqsTmoGmJUEyBkc0lKPGZIucQi8PVZvfS/FFJF4RDArbLy7XR5Jozdl36aeTGvq6EhcX+8SyxhjyGhqg+CEZvirdlqyO07XSbRPQt+IcGU541/sbrQw4/GhonvdPDLOHcsdK1biCndjS7KrDLjSO1gyZHs3x1zm1OYeOhiA0vsTYWefm8LJbCKtgy1ly+V5iKmX7IUAxlfSrTyBkRAdI51BxcEJC8q222Kw4ATnT4lOie2ahsUVZ4mGfI8x/DyujuhKXVc+AN5RHcHUipqCR6EgYCGHOk//3xFMqy6Xt06fGxGt/Tnc5Ogf34U7aFpgQmPAnTeL+c0gHp+HMU5ouIMbYTmC2J4RJfMIe/gCpyoE5RKivmd4QpfAgcjI5ABRQjIpDc+WjghxC97zqv8RUvRIKirbKpvyXW2aMj1UALsoJWZplkZqc5Hseyo/9Sfaw7vCNuNaT5FM2lshAxnKG5ss1AXZx3BtXTAdsy3o5vX5GNWwx565rdVHprJZAodyb5osg3IR3nQNPvLwEOxZRKxGM2Y4p/k8Sl4J7PVQkovvETcQG33ADUB8Eb0evJXpjqgp5A2g0q1pztSKLjNl85/UqK3XNgpc+T8vimzQ4PnjAMG0TyWWkMu7BS9gHDCnYQclBEzQnZ3P49ors="
 
 before_install:
 
@@ -24,6 +24,7 @@ install:
 
 script:
 - npm run build
+- bash sonar.sh
 
 # Here we want to check out where we are.
 # We only want to update Github Pages if we're building
