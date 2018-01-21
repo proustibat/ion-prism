@@ -2,23 +2,22 @@ import { Directive, ElementRef, Renderer2 } from '@angular/core';
 import * as Prism from 'prismjs';
 
 @Directive({
-    selector: 'textarea[ion-prism]'
+    selector: 'textarea[ion-prism]',
 })
 export class IonPrismDirective {
 
-    el:any;
-    content:string;
-    language:string;
+    el: any;
+    content: string;
+    language: string;
 
-    constructor(public elementRef: ElementRef, public renderer: Renderer2) {}
+    constructor( public elementRef: ElementRef, public renderer: Renderer2 ) {}
 
-    ngOnInit(){
+    ngOnInit () {
         this.content = this.elementRef.nativeElement.value;
         this.language = this.elementRef.nativeElement.getAttribute('ion-prism');
 
         this.el = this.renderer.createElement('pre');
         this.renderer.appendChild(this.el, this.renderer.createText(this.content));
-        // this.el.innerHTML = content;
         this.renderer.addClass(this.el, 'prism');
         this.renderer.addClass(this.el, 'language-' + this.language);
         this.renderer.setAttribute(this.el, 'data-prism-language', this.language);
@@ -30,24 +29,19 @@ export class IonPrismDirective {
         this.highlightCode();
     }
 
-    highlightCode():void {
+    highlightCode (): void {
         let newContent = '';
-        let highlightedHTML = Prism.highlight(this.content, Prism.languages[this.language])
+        const highlightedHTML = Prism.highlight(this.content, Prism.languages[this.language])
         // .replace(/^\s\s*/, '') // delete spaces at the start of the block
             .replace(/\s\s*$/, ''); // delete spaces at the end of the block
 
-        let spacesToCancel = highlightedHTML.search(/\S|$/);
+        const spacesToCancel = highlightedHTML.search(/\S|$/);
 
-        let lines = highlightedHTML.split('\n');
+        const lines = highlightedHTML.split('\n');
 
         lines.forEach((line, index) => {
-            let spacesAtStart = line.search(/\S|$/);
-            if(spacesAtStart >= spacesToCancel) {
-                line = line.slice(spacesToCancel);
-            }
-            else {
-                line = line.slice(spacesAtStart);
-            }
+            const spacesAtStart = line.search(/\S|$/);
+            line = line.slice( spacesAtStart >= spacesToCancel ? spacesToCancel : spacesAtStart );
             newContent += line + '\n';
         });
 

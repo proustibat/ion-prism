@@ -6,7 +6,7 @@ env:
 
 language: node_js
 node_js: '8'
-cache: npm
+cache: yarn
 
 # create a user token here: https://sonarcloud.io/account/security
 # run `travis encrypt your-token-here`
@@ -20,10 +20,10 @@ addons:
 before_install:
 
 install:
-- npm install
+- yarn install
 
 script:
-- npm run build
+- yarn build
 - bash sonar.sh
 
 # Here we want to check out where we are.
