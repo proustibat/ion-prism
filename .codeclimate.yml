@@ -8,6 +8,7 @@ engines:
       - javascript
   tslint:
     enabled: true
+    config: tslint-codeclimate.json
   fixme:
     enabled: false
 ratings:
