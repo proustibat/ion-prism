@@ -4,7 +4,7 @@
   "description": "Ionic directive to display code blocks in Ionic 3 apps",
   "main": "index.ts",
   "scripts": {
-    "tslint": "./node_modules/.bin/tslint -c tslint.json index.ts ",
+    "tslint": "./node_modules/.bin/tslint -c tslint.json index.ts",
     "build": "npm run lint && tsc --noStrictGenericChecks",
     "publish": "npm run build",
     "postversion": "git push origin master --tags",
@@ -48,6 +48,7 @@
     "typescript": "2.6.2"
   },
   "devDependencies": {
+    "codelyzer": "^4.1.0",
     "commitizen": "2.9.6",
     "cz-conventional-changelog": "2.1.0",
     "tslint": "5.9.1",
