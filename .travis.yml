@@ -5,7 +5,9 @@ env:
     # generate secure with travis encrypt -r username/repository GH_TOKEN=[the token you created before]
 
 language: node_js
-node_js: '8'
+node_js:
+- '8'
+- '10'
 cache: npm
 
 # create a user token here: https://sonarcloud.io/account/security
