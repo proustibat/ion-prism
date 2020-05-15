@@ -41,7 +41,7 @@
     "@angular/core": "5.2.1",
     "@angular/forms": "5.2.1",
     "@angular/http": "5.2.1",
-    "@types/prismjs": "^1.9.0",
+    "@types/prismjs": "^1.16.1",
     "ionic-angular": "3.9.2",
     "prismjs": "1.11.0",
     "rxjs": "5.5.6",
